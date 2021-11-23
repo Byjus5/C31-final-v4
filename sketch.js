@@ -21,7 +21,7 @@ function setup() {
   ground = new Ground(0, height - 1, width * 2, 1);
   tower = new Tower(150, 350, 160, 310);
   cannon = new Cannon(180, 110, 100, 50, angle);
-//create a boat object
+//crear un objeto de bote
   
 
 boat = new Boat(width, height - 100, 200, 200, -100);
@@ -46,7 +46,7 @@ function draw() {
   for (var i = 0; i < balls.length; i++) {
     showCannonBalls(balls[i], i);
   }
-//display the boat
+//mostrar el bote
   cannon.display();
   tower.display();
 
@@ -60,7 +60,7 @@ function keyPressed() {
   }
 }
 
-//function to show the ball
+//función para mostrar la bala
 function showCannonBalls(ball, index) {
   ball.display();
   if (ball.body.position.x >= width || ball.body.position.y >= height - 50) {
